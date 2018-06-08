@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Viewport</title>
+    <script src="../build/viewport-bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <h2>Viewport</h2>
+    <div 
+        id="container" 
+        style="width:400px;height:400px;display:inline-block;background-color:#53b1d1"
+    >
+    </div>
+
+    <script onload="handleLoad()" >
+
+        Viewport(document.querySelector('#container'));
+
+    </script>
+</body>
+</html>
