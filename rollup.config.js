@@ -1,6 +1,4 @@
 // rollup.config.js
-import commonjs from 'rollup-plugin-commonjs';
-import resolve from 'rollup-plugin-node-resolve';
 
 export default {
 	input: 'src/index.js',
@@ -10,19 +8,7 @@ export default {
 		format: 'iife',
 		name: 'Viewport',
 		globals: {
-			THREE: 'THREE'
+			three: 'THREE'
 		}
-	},
-	plugins: [
-		resolve({ jsnext: true}),
-		commonjs({
-			include: [
-				'node_modules/three/**'
-			]
-			// exclude: [
-			// 	'**/three/**'
-			// ],
-			// namedExports: {'/node_modules/three/build/three.min.js':['THREE']}
-		})
-	]
+	}
 }
