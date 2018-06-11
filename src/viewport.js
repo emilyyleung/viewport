@@ -14,8 +14,9 @@ export default function Viewport(domParent) {
 
 	// this._renderer = new Renderer(domParent, renderWidth, renderHeight);
 	var renderer = new Renderer(domParent, renderWidth, renderHeight);
-	renderer.doRender();
-	console.log(renderer);
+	domParent.appendChild( renderer.renderer.domElement );
+	// renderer.doRender();
+	// console.log(renderer);
 
 	console.log("Viewport has finished loading")
 
