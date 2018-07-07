@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Viewport</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/93/three.min.js" ></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/TransformControls.js"></script>
     <script src="../build/viewport-bundle.js"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i" rel="stylesheet">
 
@@ -17,13 +19,19 @@
     <h2>Viewport</h2>
     <div
         id="container"
-        style="width:800px;height:800px;display:inline-block;background-color:#FFFFFF;opacity:1"
+        style="width:900px;height:500px;display:inline-block;background-color:#FFFFFF;opacity:1"
     >
-    </div>
-
     <script onload="handleLoad()" >
 
-        Viewport(document.querySelector('#container'));
+        var sphere = {
+            "origin": [0,0,0],
+            "radius": 5,
+            "primitive":"sphere"
+        };
+    
+        viewport = new Viewport(document.querySelector('#container'));
+
+        viewport.setGeometryJson(sphere);
 
     </script>
 </body>

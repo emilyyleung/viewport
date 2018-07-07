@@ -1,4 +1,6 @@
 // rollup.config.js
+import commonjs from 'rollup-plugin-commonjs';
+import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
 	input: 'src/index.js',
@@ -10,5 +12,11 @@ export default {
 		globals: {
 			three: 'THREE'
 		}
-	}
+	},
+	plugins: [
+		nodeResolve(),
+		commonjs({
+			ignoreGlobal: true
+		})
+	]
 }

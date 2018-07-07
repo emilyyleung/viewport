@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "type": "Object",
+    "generator": "io_three",
+    "version": 4.4
+  },
+  "geometries": [
+    {
+      "uuid": "BFC4EDDD-315A-11E8-B467-0ED5F89F718B",
+      "type": "Geometry",
+      "name": "Cube_2",
+      "data": {
+        "faces": [0,22,27,30,0,21,26,29,0,23,24,31,0,20,25,28,0,17,19,18,0,5,7,6,0,13,15,14,0,9,11,10,0,1,3,2],
+        "vertices": [-25,-25,0,-25,25,0,25,-25,0,25,25,0,-25,-25,0,25,-25,0,-25,-25,50,25,-25,50,25,-25,0,25,25,0,25,-25,50,25,25,50,25,25,0,-25,25,0,25,25,50,-25,25,50,-25,25,0,-25,-25,0,-25,25,50,-25,-25,50,25,25,50,-25,25,50,-25,-25,50,25,-25,50,25,25,50,-25,25,50,-25,-25,50,25,-25,50,0,0,75,0,0,75,0,0,75,0,0,75]
+      }
+    }
+  ],
+  "materials": [
+    {
+      "depthWrite": true,
+      "depthTest": true,
+      "name": "Material",
+      "vertexColors": 0,
+      "shininess": 50,
+      "uuid": "5743D346-BD6D-4E2D-8C26-469C47E83BF2",
+      "type": "MeshPhongMaterial",
+      "color": 10724259,
+      "emissive": 0,
+      "specular": 8355711,
+      "blending": 1
+    }
+  ],
+  "object": {
+    "uuid": "50DE8152-D1B8-4F08-9B18-8948279A4855",
+    "type": "Scene",
+    "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+    "children": [
+      {
+        "name": "Cube_2",
+        "uuid": "12F5E478-355C-31E8-B427-0ED7F89F718B",
+        "matrix": [-1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+        "visible": true,
+        "type": "Mesh",
+        "material": "5743D346-BD6D-4E2D-8C26-469C47E83BF2",
+        "castShadow": true,
+        "receiveShadow": true,
+        "geometry": "BFC4EDDD-315A-11E8-B467-0ED5F89F718B"
+      }
+    ]
+  },
+  "BIMData": {
+    "materials_and_finishes": {
+      "finish": "satin",
+      "material": "wood-oak-satin"
+    },
+    "dimensions": {
+      "height": 900,
+      "length": 3783,
+      "width": 3726
+    },
+    "identity_data": {
+      "createdByURL_ANZRS": "http://www.coxarchitecture.com.au",
+      "model": "123ABC",
+      "manufacturer": "XYZ",
+      "description": "test block",
+      "assembly_code": "E2010",
+      "cost": 150
+    }
+  }
+}
